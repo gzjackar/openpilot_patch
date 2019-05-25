@@ -1,0 +1,13 @@
+# This patch disable the beep sound from engage and disenage
+#
+===================================================================
+--- a/selfdrive/car/honda/values.py
++++ b/selfdrive/car/honda/values.py
+
+
+-  AudibleAlert.chimeEngage: (BP.SINGLE, CM.MUTE),
+-  AudibleAlert.chimeDisengage: (BP.SINGLE, CM.MUTE),
++  AudibleAlert.chimeEngage: (BP.MUTE, CM.MUTE),
++  AudibleAlert.chimeDisengage: (BP.MUTE, CM.MUTE),
+
+     return events
